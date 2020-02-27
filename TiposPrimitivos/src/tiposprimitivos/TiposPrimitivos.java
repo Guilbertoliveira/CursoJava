@@ -18,6 +18,9 @@ public class TiposPrimitivos {
      */ 
     public static void main(String[] args) {
         
+        
+   
+    
               
         System.out.println("nome do aluno");
         Scanner teclado = new Scanner(System.in);
@@ -27,6 +30,8 @@ public class TiposPrimitivos {
         System.out.printf("a nota do %s é %.4f \n", nome, nota);
         nota = 2.5f;
         System.out.format("a nota do %s é %.4f \n", nome, nota);
+        
+        
     }
     
 }
