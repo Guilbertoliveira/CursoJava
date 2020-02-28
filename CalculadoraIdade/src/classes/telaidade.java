@@ -37,6 +37,11 @@ public class telaidade extends javax.swing.JFrame {
         lblAtual = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jLabel1.setText("Ano de Nascimento");
 
@@ -51,6 +56,7 @@ public class telaidade extends javax.swing.JFrame {
 
         jLabel3.setText("jLabel3");
 
+        lblAtual.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         lblAtual.setText("Ano Atual");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -67,14 +73,14 @@ public class telaidade extends javax.swing.JFrame {
                             .addComponent(btnCalcular)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jsData, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                                .addComponent(lblAtual))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                                .addComponent(lblAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(11, 11, 11)
                         .addComponent(jLabel2)
                         .addGap(140, 140, 140)
                         .addComponent(jLabel3)))
-                .addGap(122, 122, 122))
+                .addGap(94, 94, 94))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -98,14 +104,15 @@ public class telaidade extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
 
-        
-        Calendar cal = Calendar.getInstance();
+         Calendar cal = Calendar.getInstance();
+      
         int year = cal.get(Calendar.YEAR);
 
         lblAtual.setText(Integer.toString(year));
+
         
         int ano = Integer.parseInt(jsData.getValue().toString());
-        int id = 2020 - ano;
+        int id = year - ano;
         System.out.println(id);
    
 
@@ -115,11 +122,24 @@ public class telaidade extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnCalcularActionPerformed
 
+  
+ 
+    
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+         Calendar cal = Calendar.getInstance();
+      
+        int year = cal.get(Calendar.YEAR);
+
+        lblAtual.setText(Integer.toString(year));
+    }//GEN-LAST:event_formWindowOpened
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
+        
+        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -146,6 +166,8 @@ public class telaidade extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new telaidade().setVisible(true);
+                
+                
             }
         });
     }
