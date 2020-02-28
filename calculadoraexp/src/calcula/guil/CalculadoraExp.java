@@ -38,6 +38,8 @@ public class CalculadoraExp extends javax.swing.JFrame {
         lblResto = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         lblRaiz = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        lblRaizArre = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,6 +65,10 @@ public class CalculadoraExp extends javax.swing.JFrame {
         jLabel4.setText("Raiz");
 
         lblRaiz.setText("0");
+
+        jLabel6.setText("RaizArredondado");
+
+        lblRaizArre.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,11 +97,16 @@ public class CalculadoraExp extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtn2)
                                     .addComponent(txtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(119, 119, 119)
-                        .addComponent(lblRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(jLabel6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblRaizArre, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(jLabel4)
+                            .addGap(119, 119, 119)
+                            .addComponent(lblRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +131,11 @@ public class CalculadoraExp extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(lblRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(lblRaizArre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(btndDividir)
                 .addContainerGap())
         );
@@ -137,8 +152,12 @@ public class CalculadoraExp extends javax.swing.JFrame {
          float resul = n1 / n2;
          float sobra = n1 % n2;
          
+         float raizarren = (float) Math.ceil(raiz); // arredondar pra cima
+         // float raizarren = (float) Math.floor(raiz); 
          
          lblRaiz.setText(Float.toString(raiz));
+         
+         lblRaizArre.setText(Float.toString(raizarren));
          lblDiv.setText(Float.toString(resul));
          lblResto.setText(Float.toString(sobra));
 
@@ -189,8 +208,10 @@ public class CalculadoraExp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel lblDiv;
     private javax.swing.JLabel lblRaiz;
+    private javax.swing.JLabel lblRaizArre;
     private javax.swing.JLabel lblResto;
     private javax.swing.JTextField txtn1;
     private javax.swing.JTextField txtn2;
