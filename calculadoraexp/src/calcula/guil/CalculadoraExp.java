@@ -118,11 +118,11 @@ public class CalculadoraExp extends javax.swing.JFrame {
         int n2 = Integer.parseInt(txtn2.getText());
         
         
-         int resul = n1 / n2;
-         int sobra = n1 % n2;
+         float resul = n1 / n2;
+         float sobra = n1 % n2;
          
-         lblDiv.setText(Integer.toString(resul));
-         lblResto.setText(Integer.toString(sobra));
+         lblDiv.setText(Float.toString(resul));
+         lblResto.setText(Float.toString(sobra));
 
 
 
