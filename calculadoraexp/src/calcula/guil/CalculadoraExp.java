@@ -40,6 +40,8 @@ public class CalculadoraExp extends javax.swing.JFrame {
         lblRaiz = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         lblRaizArre = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lblAle = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +72,10 @@ public class CalculadoraExp extends javax.swing.JFrame {
 
         lblRaizArre.setText("0");
 
+        jLabel7.setText("Valor aleatorio");
+
+        lblAle.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -98,6 +104,10 @@ public class CalculadoraExp extends javax.swing.JFrame {
                                     .addComponent(txtn2)
                                     .addComponent(txtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(jLabel7)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblAle, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addComponent(jLabel6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -131,11 +141,15 @@ public class CalculadoraExp extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(lblRaiz, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(lblRaizArre, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(lblAle, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btndDividir)
                 .addContainerGap())
         );
@@ -151,10 +165,12 @@ public class CalculadoraExp extends javax.swing.JFrame {
         float raiz = (float) Math.sqrt(n2);
          float resul = n1 / n2;
          float sobra = n1 % n2;
+         int rand = (int) (0 + Math.random() * (10-0));
          
          float raizarren = (float) Math.ceil(raiz); // arredondar pra cima
          // float raizarren = (float) Math.floor(raiz); 
          
+         lblAle.setText(Integer.toString(rand));
          lblRaiz.setText(Float.toString(raiz));
          
          lblRaizArre.setText(Float.toString(raizarren));
@@ -209,6 +225,8 @@ public class CalculadoraExp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel lblAle;
     private javax.swing.JLabel lblDiv;
     private javax.swing.JLabel lblRaiz;
     private javax.swing.JLabel lblRaizArre;
