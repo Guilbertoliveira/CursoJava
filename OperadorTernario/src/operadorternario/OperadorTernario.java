@@ -22,6 +22,16 @@ public class OperadorTernario {
         int maior = n1>n2?n1-3:n2;
         System.out.println(maior);
         
+        String nome1 = "guil";
+        String nome2 = "guil";
+        String nome3 = new String("guil");
+        
+        String resul = nome1 == nome3?"é igual":"é diferente";
+        String resul2 = (nome1.equals(nome3)?"igual":"diferente");
+        
+        System.out.println(resul);
+        System.out.println(resul2);
+        
     }
     
 }
