@@ -16,6 +16,19 @@ public class ProjetoFatorial extends javax.swing.JFrame {
      */
     public ProjetoFatorial() {
         initComponents();
+        
+        lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+            lblOito.setVisible(false);
+            lblNove.setVisible(false);
+            lblDez.setVisible(false);
+            lblOnze.setVisible(false);
+            lblDoze.setVisible(false);
     }
 
     /**
@@ -27,14 +40,36 @@ public class ProjetoFatorial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jsFat = new javax.swing.JSpinner();
         jLabel1 = new javax.swing.JLabel();
         lblResul = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        lblUm = new javax.swing.JLabel();
+        lblDois = new javax.swing.JLabel();
+        lblTres = new javax.swing.JLabel();
+        lblQuatro = new javax.swing.JLabel();
+        lblCinco = new javax.swing.JLabel();
+        lblSeis = new javax.swing.JLabel();
+        lblSete = new javax.swing.JLabel();
+        lblOito = new javax.swing.JLabel();
+        lblNove = new javax.swing.JLabel();
+        lblDez = new javax.swing.JLabel();
+        lblOnze = new javax.swing.JLabel();
+        lblDoze = new javax.swing.JLabel();
+        lblTreze = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lblResul2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("fatorial");
+        setBackground(new java.awt.Color(0, 102, 102));
 
         jsFat.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jsFat.setModel(new javax.swing.SpinnerNumberModel(0, 0, 12, 1));
+        jsFat.setAlignmentX(1.0F);
+        jsFat.setAlignmentY(5.0F);
+        jsFat.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         jsFat.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jsFatStateChanged(evt);
@@ -47,28 +82,156 @@ public class ProjetoFatorial extends javax.swing.JFrame {
         lblResul.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         lblResul.setText("1");
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jsFat, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblResul)
+                .addContainerGap(152, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jsFat, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
+                    .addComponent(lblResul))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setForeground(new java.awt.Color(255, 255, 255));
+
+        lblUm.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblUm.setText("12x");
+
+        lblDois.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblDois.setText("11x");
+
+        lblTres.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTres.setText("10x");
+
+        lblQuatro.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblQuatro.setText("9x");
+
+        lblCinco.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCinco.setText("8x");
+
+        lblSeis.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblSeis.setText("7x");
+
+        lblSete.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblSete.setText("6x");
+
+        lblOito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblOito.setText("5x");
+
+        lblNove.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblNove.setText("4x");
+
+        lblDez.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblDez.setText("3x");
+
+        lblOnze.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblOnze.setText("2x");
+
+        lblDoze.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblDoze.setText("1");
+
+        lblTreze.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTreze.setText("Resultado");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setText("=");
+
+        lblResul2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lblResul2.setText("1");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTreze)
+                .addGap(40, 40, 40)
+                .addComponent(lblUm, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addComponent(lblDois, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblTres, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblSete, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblOito, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblNove, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblDez, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblOnze, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblDoze, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(lblResul2)
+                .addContainerGap(123, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDois, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTres, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblQuatro, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSete, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblOito, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNove, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDez, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTreze)
+                    .addComponent(lblUm, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCinco, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblOnze, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDoze, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(lblResul2))
+                .addContainerGap(91, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jsFat, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(lblResul)
-                .addContainerGap(238, Short.MAX_VALUE))
+                .addGap(80, 80, 80)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jsFat, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(lblResul))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,6 +242,7 @@ public class ProjetoFatorial extends javax.swing.JFrame {
         int n = Integer.parseInt(jsFat.getValue().toString());
         int c = n;
         int f = 1;
+        int x = 0;
         
         if (n == 0)
         {
@@ -93,13 +257,248 @@ public class ProjetoFatorial extends javax.swing.JFrame {
             
             f *= c;
             c--;
+            x ++;
+            
+            System.out.println(x);
+         
         }
         
-        
+        funcaoDoida(x);
         lblResul.setText(Integer.toString(f));
+         lblResul2.setText(Integer.toString(f));
 
     }//GEN-LAST:event_jsFatStateChanged
 
+    
+    public void funcaoDoida(int qntd){
+    
+        
+        if (qntd == 12 )
+        {
+            lblUm.setVisible(true);
+            lblDois.setVisible(true);
+            lblTres.setVisible(true);    
+            lblQuatro.setVisible(true);
+            lblCinco.setVisible(true);
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+        }
+        
+             if (qntd == 11 )
+        {
+ 
+            lblDois.setVisible(true);
+            lblTres.setVisible(true);    
+            lblQuatro.setVisible(true);
+            lblCinco.setVisible(true);
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+             lblUm.setVisible(false);
+           
+        }
+             
+                  if (qntd == 10)
+        {
+  
+            lblTres.setVisible(true);    
+            lblQuatro.setVisible(true);
+            lblCinco.setVisible(true);
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+               lblUm.setVisible(false);
+            lblDois.setVisible(false);
+         
+        }
+                  
+                       if (qntd == 9 )
+        {
+            
+            lblQuatro.setVisible(true);
+            lblCinco.setVisible(true);
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+              lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false); 
+     
+        }
+                       
+                            if (qntd == 8 )
+        {
+       
+            lblCinco.setVisible(true);
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+                lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+        }
+                            
+                                 if (qntd == 7 )
+        {
+    
+            lblSeis.setVisible(true);
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+                lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+
+        }
+                                 
+                                      if (qntd == 6 )
+        {
+       
+            lblSete.setVisible(true);
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+                     lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+   
+        }
+                                      
+                                           if (qntd == 5 )
+        {
+           
+            lblOito.setVisible(true);
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+                    lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+ 
+        }
+                                           
+                                                if (qntd == 4 )
+        {
+       
+            lblNove.setVisible(true);
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true);
+            
+                  lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+            lblOito.setVisible(false);
+
+        }
+                                                
+                                                     if (qntd == 3 )
+        {
+       
+            lblDez.setVisible(true);
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true); 
+            
+              lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+            lblOito.setVisible(false);
+            lblNove.setVisible(false);
+
+        }
+                                                     
+                                                          if (qntd == 2 )
+        {
+            lblOnze.setVisible(true);
+            lblDoze.setVisible(true); 
+            
+            lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+            lblOito.setVisible(false);
+            lblNove.setVisible(false);
+            lblDez.setVisible(false);
+  
+        }
+                                                          
+               if (qntd == 1 )
+        {
+            lblDoze.setVisible(true); 
+            
+            lblUm.setVisible(false);
+            lblDois.setVisible(false);
+            lblTres.setVisible(false);    
+            lblQuatro.setVisible(false);
+            lblCinco.setVisible(false);
+            lblSeis.setVisible(false);
+            lblSete.setVisible(false);
+            lblOito.setVisible(false);
+            lblNove.setVisible(false);
+            lblDez.setVisible(false);
+            lblOnze.setVisible(false);
+     
+  
+        }
+        
+  
+}
+    
     /**
      * @param args the command line arguments
      */
@@ -137,7 +536,24 @@ public class ProjetoFatorial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JSpinner jsFat;
+    private javax.swing.JLabel lblCinco;
+    private javax.swing.JLabel lblDez;
+    private javax.swing.JLabel lblDois;
+    private javax.swing.JLabel lblDoze;
+    private javax.swing.JLabel lblNove;
+    private javax.swing.JLabel lblOito;
+    private javax.swing.JLabel lblOnze;
+    private javax.swing.JLabel lblQuatro;
     private javax.swing.JLabel lblResul;
+    private javax.swing.JLabel lblResul2;
+    private javax.swing.JLabel lblSeis;
+    private javax.swing.JLabel lblSete;
+    private javax.swing.JLabel lblTres;
+    private javax.swing.JLabel lblTreze;
+    private javax.swing.JLabel lblUm;
     // End of variables declaration//GEN-END:variables
 }
