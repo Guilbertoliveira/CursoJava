@@ -28,7 +28,8 @@ public class EstruturadeRepeticao {
         while (b < a)
         {
             b++;
-            if (b == 5) continue;
+            if (b == 5) continue; //interrompe no 5 e volta pro laço
+            // ja o break jogaria pra fora do laço
             System.out.println("while " + b);
             
         }
