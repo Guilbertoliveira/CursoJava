@@ -20,4 +20,15 @@ public class Operacoes {
         }
         return s;
     }
+    
+    
+        public static String contador1(int i, int f)
+    {
+        String s = "";
+        for (int c = i; c <= f; c++)
+        {
+            s += c+ " ";
+        }
+        return s;
+    }
 }
