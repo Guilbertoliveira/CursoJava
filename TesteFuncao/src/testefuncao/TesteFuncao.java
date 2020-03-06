@@ -14,6 +14,7 @@ public class TesteFuncao {
     /**
      * @param args the command line arguments
      */
+    // procedimentos
     
     static void soma(int a, int b) // METODO, static apenas funcional dentro da classe
     {
